@@ -16,6 +16,8 @@
 		F3554C731C3D6A4B00C9F221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3554C711C3D6A4B00C9F221 /* LaunchScreen.storyboard */; };
 		F3554C7E1C3D6A4B00C9F221 /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3554C7D1C3D6A4B00C9F221 /* CoreDataTests.m */; };
 		F3554C891C3D6A4B00C9F221 /* CoreDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3554C881C3D6A4B00C9F221 /* CoreDataUITests.m */; };
+		F3554C9A1C3D6B7D00C9F221 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = F3554C991C3D6B7D00C9F221 /* CoreDataStack.m */; };
+		F3554C9B1C3D6C1600C9F221 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3554C961C3D6A9900C9F221 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		F3554C841C3D6A4B00C9F221 /* CoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3554C881C3D6A4B00C9F221 /* CoreDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataUITests.m; sourceTree = "<group>"; };
 		F3554C8A1C3D6A4B00C9F221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3554C961C3D6A9900C9F221 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F3554C981C3D6B7D00C9F221 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		F3554C991C3D6B7D00C9F221 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3554C9B1C3D6C1600C9F221 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,7 @@
 		F3554C541C3D6A4B00C9F221 = {
 			isa = PBXGroup;
 			children = (
+				F3554C961C3D6A9900C9F221 /* CoreData.framework */,
 				F3554C5F1C3D6A4B00C9F221 /* CoreData */,
 				F3554C7C1C3D6A4B00C9F221 /* CoreDataTests */,
 				F3554C871C3D6A4B00C9F221 /* CoreDataUITests */,
@@ -105,6 +112,8 @@
 			children = (
 				F3554C631C3D6A4B00C9F221 /* AppDelegate.h */,
 				F3554C641C3D6A4B00C9F221 /* AppDelegate.m */,
+				F3554C981C3D6B7D00C9F221 /* CoreDataStack.h */,
+				F3554C991C3D6B7D00C9F221 /* CoreDataStack.m */,
 				F3554C661C3D6A4B00C9F221 /* ViewController.h */,
 				F3554C671C3D6A4B00C9F221 /* ViewController.m */,
 				F3554C691C3D6A4B00C9F221 /* Main.storyboard */,
@@ -276,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3554C9A1C3D6B7D00C9F221 /* CoreDataStack.m in Sources */,
 				F3554C6E1C3D6A4B00C9F221 /* CoreData.xcdatamodeld in Sources */,
 				F3554C681C3D6A4B00C9F221 /* ViewController.m in Sources */,
 				F3554C651C3D6A4B00C9F221 /* AppDelegate.m in Sources */,
