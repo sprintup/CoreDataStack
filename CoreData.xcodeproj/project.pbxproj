@@ -18,6 +18,9 @@
 		F3554C891C3D6A4B00C9F221 /* CoreDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3554C881C3D6A4B00C9F221 /* CoreDataUITests.m */; };
 		F3554C9A1C3D6B7D00C9F221 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = F3554C991C3D6B7D00C9F221 /* CoreDataStack.m */; };
 		F3554C9B1C3D6C1600C9F221 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3554C961C3D6A9900C9F221 /* CoreData.framework */; };
+		F35F6EA91C3ED3DA0034E4A0 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F6EA81C3ED3DA0034E4A0 /* TableViewController.m */; };
+		F35F6EAE1C3ED4E40034E4A0 /* Entity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F6EAB1C3ED4E40034E4A0 /* Entity+CoreDataProperties.m */; };
+		F35F6EAF1C3ED4E40034E4A0 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = F35F6EAD1C3ED4E40034E4A0 /* Entity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,12 @@
 		F3554C961C3D6A9900C9F221 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F3554C981C3D6B7D00C9F221 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
 		F3554C991C3D6B7D00C9F221 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		F35F6EA71C3ED3DA0034E4A0 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		F35F6EA81C3ED3DA0034E4A0 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		F35F6EAA1C3ED4E40034E4A0 /* Entity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F35F6EAB1C3ED4E40034E4A0 /* Entity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F35F6EAC1C3ED4E40034E4A0 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		F35F6EAD1C3ED4E40034E4A0 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,10 @@
 		F3554C541C3D6A4B00C9F221 = {
 			isa = PBXGroup;
 			children = (
+				F35F6EAA1C3ED4E40034E4A0 /* Entity+CoreDataProperties.h */,
+				F35F6EAB1C3ED4E40034E4A0 /* Entity+CoreDataProperties.m */,
+				F35F6EAC1C3ED4E40034E4A0 /* Entity.h */,
+				F35F6EAD1C3ED4E40034E4A0 /* Entity.m */,
 				F3554C961C3D6A9900C9F221 /* CoreData.framework */,
 				F3554C5F1C3D6A4B00C9F221 /* CoreData */,
 				F3554C7C1C3D6A4B00C9F221 /* CoreDataTests */,
@@ -117,6 +130,8 @@
 				F3554C661C3D6A4B00C9F221 /* ViewController.h */,
 				F3554C671C3D6A4B00C9F221 /* ViewController.m */,
 				F3554C691C3D6A4B00C9F221 /* Main.storyboard */,
+				F35F6EA71C3ED3DA0034E4A0 /* TableViewController.h */,
+				F35F6EA81C3ED3DA0034E4A0 /* TableViewController.m */,
 				F3554C6F1C3D6A4B00C9F221 /* Assets.xcassets */,
 				F3554C711C3D6A4B00C9F221 /* LaunchScreen.storyboard */,
 				F3554C741C3D6A4B00C9F221 /* Info.plist */,
@@ -285,11 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35F6EAF1C3ED4E40034E4A0 /* Entity.m in Sources */,
 				F3554C9A1C3D6B7D00C9F221 /* CoreDataStack.m in Sources */,
+				F35F6EA91C3ED3DA0034E4A0 /* TableViewController.m in Sources */,
 				F3554C6E1C3D6A4B00C9F221 /* CoreData.xcdatamodeld in Sources */,
 				F3554C681C3D6A4B00C9F221 /* ViewController.m in Sources */,
 				F3554C651C3D6A4B00C9F221 /* AppDelegate.m in Sources */,
 				F3554C621C3D6A4B00C9F221 /* main.m in Sources */,
+				F35F6EAE1C3ED4E40034E4A0 /* Entity+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +531,7 @@
 				F3554C8F1C3D6A4B00C9F221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3554C901C3D6A4B00C9F221 /* Build configuration list for PBXNativeTarget "CoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +540,7 @@
 				F3554C921C3D6A4B00C9F221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3554C931C3D6A4B00C9F221 /* Build configuration list for PBXNativeTarget "CoreDataUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +549,7 @@
 				F3554C951C3D6A4B00C9F221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
